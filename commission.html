@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noai, noimageai">
+  <meta name="description" content="ポリキュー部 - コミッション依頼・料金案内">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ポリキュー部">
+  <meta property="og:title" content="コミッション | ポリキュー部">
+  <meta property="og:description" content="3DCGモデル制作のコミッション依頼・料金案内ページです。">
+  <meta property="og:image" content="SITE_URL/images/logo.png">
+  <meta property="og:url" content="SITE_URL/commission.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Polycube_3DCG">
+  <title>コミッション | ポリキュー部</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wireframe-bg" id="wireframe-bg"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="ポリキュー部" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="members.html">部員紹介</a></li>
+        <li><a href="achievements.html">活動実績</a></li>
+        <li><a href="commission.html">コミッション</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="section-title">Commission</h1>
+      <span class="page-header-rule"></span>
+      <p class="section-subtitle">コミッション依頼・料金案内</p>
+    </div>
+  </div>
+
+  <div class="commission-status-bar">
+    <div class="container">
+      <span class="commission-status-icon">⚠</span>
+      現在、コミッションのご依頼は受け付けておりません。受付開始時にお知らせいたします。
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="commission-layout">
+
+        <!-- VTuber向けフルスクラッチ -->
+        <div class="card commission-card">
+          <div class="commission-card-header">
+            <span class="tag tag-main" style="font-size:0.8rem;">フルスクラッチ</span>
+            <h2 class="commission-title">VTuber向け 3Dモデル制作</h2>
+            <p class="commission-desc">オリジナルキャラクターの3Dモデルをゼロから制作します。</p>
+          </div>
+          <div class="commission-items">
+            <div class="commission-item">
+              <div class="commission-item-name">モデリング ～ 基本のVRMセットアップ</div>
+              <div class="commission-item-price">¥400,000〜</div>
+            </div>
+            <div class="commission-item">
+              <div class="commission-item-name">パーフェクトシンク対応</div>
+              <div class="commission-item-price">¥50,000〜</div>
+            </div>
+            <div class="commission-item">
+              <div class="commission-item-name">VRChat用データ対応</div>
+              <div class="commission-item-price">¥50,000〜</div>
+            </div>
+          </div>
+          <p class="commission-note">※ 納品まで2〜3カ月ほどいただきます。</p>
+        </div>
+
+        <!-- ブラッシュアップ -->
+        <div class="card commission-card">
+          <div class="commission-card-header">
+            <span class="tag tag-purple" style="font-size:0.8rem;">ブラッシュアップ</span>
+            <h2 class="commission-title">既存モデルの改修・修正</h2>
+            <p class="commission-desc">既存の3Dモデルの各工程を個別に対応します。</p>
+          </div>
+          <div class="commission-items">
+            <div class="commission-item">
+              <div class="commission-item-name">モデリング</div>
+              <div class="commission-item-price">¥100,000〜</div>
+            </div>
+            <div class="commission-item">
+              <div class="commission-item-name">テクスチャ</div>
+              <div class="commission-item-price">¥100,000〜</div>
+            </div>
+            <div class="commission-item">
+              <div class="commission-item-name">リギング・ウェイト</div>
+              <div class="commission-item-price">¥100,000〜</div>
+            </div>
+          </div>
+          <p class="commission-note">※ 納期によって価格が変動する場合があります。</p>
+        </div>
+
+      </div>
+
+      <!-- 依頼ボタン -->
+      <div style="text-align:center; margin-top:56px;">
+        <p style="font-size:0.95rem; color:var(--color-text-muted); margin-bottom:20px;">
+          ご不明な点やご相談はお気軽にXのDMよりご連絡ください。
+        </p>
+        <!-- 募集開始時は↓を <a href="https://docs.google.com/forms/d/e/1FAIpQLSchhwswB7Pv5vmNMF-x2mRxb0qWkuF45n_u8TO_YKFjib921Q/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn btn-primary" に変更 -->
+        <span class="btn btn-primary btn-disabled" style="font-size:1rem; padding:14px 40px;">
+          依頼フォーム（近日公開）
+        </span>
+        <div style="margin-top:16px;">
+          <a href="https://x.com/Polycube_3DCG" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.95rem;">
+            X (Twitter) でDM・相談する
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="images/logo.png" alt="ポリキュー部" class="footer-logo-img">
+      <ul class="footer-nav">
+        <li><a href="members.html">部員紹介</a></li>
+        <li><a href="achievements.html">活動実績</a></li>
+        <li><a href="commission.html">コミッション</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <div class="footer-sns-row">
+        <a href="https://www.youtube.com/@Polycube3DCG" target="_blank" rel="noopener" class="footer-sns-icon" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#ff0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.75 15.5V8.5l6.25 3.5-6.25 3.5z"/></svg>
+        </a>
+        <a href="https://x.com/Polycube_3DCG" target="_blank" rel="noopener" class="footer-sns-icon" aria-label="X (Twitter)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://polycube.booth.pm/" target="_blank" rel="noopener" class="footer-sns-icon" aria-label="Booth">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 ポリキュー部. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/cubes.js"></script>
+</body>
+</html>
