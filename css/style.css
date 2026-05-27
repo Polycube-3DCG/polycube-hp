@@ -245,9 +245,10 @@ section {
 
 /* ── ヒーローロゴ ── */
 .hero-logo {
-  height: clamp(120px, 28vw, 220px);
   width: auto;
-  max-width: 90%;
+  height: auto;
+  max-height: clamp(100px, 28vw, 220px);
+  max-width: 85vw;
   margin: 0 auto 32px;
   display: block;
   filter: drop-shadow(0 8px 32px rgba(0, 197, 255, 0.55));
@@ -1247,4 +1248,8 @@ footer .footer-logo {
 
   .events-table-card { overflow-x: auto !important; }
   .events-table { min-width: 480px; }
+
+  .hero-sub { gap: 8px; letter-spacing: 0.1em; }
+  .hero-sub::before,
+  .hero-sub::after { width: 18px; }
 }
