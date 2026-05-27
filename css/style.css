@@ -1242,4 +1242,7 @@ footer .footer-logo {
   .contact-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.2rem; }
   .footer-nav { gap: 16px; }
+
+  .events-table-card { overflow-x: auto !important; }
+  .events-table { min-width: 480px; }
 }

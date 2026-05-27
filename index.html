@@ -214,9 +214,10 @@
   <script>
     // ── 背景スライドショー ──
     // 画像を追加する場合はこの配列に追加してください
-    const bgSlides = [
-      'images/top_001.webp',
-    ];
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const bgSlides = isMobile
+      ? ['images/top_mobile_001.webp']
+      : ['images/top_001.webp'];
 
     const slideshowEl = document.querySelector('.hero-bg-slideshow');
     bgSlides.forEach((src, i) => {
