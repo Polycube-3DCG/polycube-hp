@@ -1252,4 +1252,7 @@ footer .footer-logo {
   .hero-sub { gap: 8px; letter-spacing: 0.1em; }
   .hero-sub::before,
   .hero-sub::after { width: 18px; }
+
+  .news-item { flex-wrap: wrap; gap: 6px 12px; }
+  .news-title { flex-basis: 100%; margin-top: 2px; }
 }
