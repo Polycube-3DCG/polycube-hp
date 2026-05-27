@@ -247,6 +247,7 @@ section {
 .hero-logo {
   height: clamp(120px, 28vw, 220px);
   width: auto;
+  max-width: 90%;
   margin: 0 auto 32px;
   display: block;
   filter: drop-shadow(0 8px 32px rgba(0, 197, 255, 0.55));
