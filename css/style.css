@@ -245,7 +245,7 @@ section {
 
 /* ── ヒーローロゴ ── */
 .hero-logo {
-  height: 220px;
+  height: clamp(120px, 28vw, 220px);
   width: auto;
   margin: 0 auto 32px;
   display: block;
