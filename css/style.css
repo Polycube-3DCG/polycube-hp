@@ -947,11 +947,13 @@ footer .footer-logo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .social-card {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-card-label {
@@ -1039,7 +1041,8 @@ footer .footer-logo {
   font-weight: 700;
   text-decoration: none;
   transition: opacity 0.2s, transform 0.2s;
-  margin-bottom: 12px;
+  margin-top: auto;
+  align-self: flex-end;
 }
 .social-follow-btn:hover { opacity: 0.85; transform: translateY(-2px); }
 .social-follow-btn--x {
