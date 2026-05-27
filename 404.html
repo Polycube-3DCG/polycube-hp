@@ -28,20 +28,35 @@
     </div>
   </nav>
 
-  <section style="min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+  <section style="min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 40px 0;">
     <div class="container">
-      <div style="font-family:'Orbitron',sans-serif; font-size: clamp(5rem, 18vw, 9rem); font-weight: 900; line-height: 1;
-                  background: var(--grad-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-                  filter: drop-shadow(0 0 40px rgba(0,197,255,0.25));">
-        404
+      <div style="display: flex; align-items: center; justify-content: center; gap: clamp(24px, 6vw, 80px); flex-wrap: wrap;">
+
+        <!-- テキストコンテンツ -->
+        <div style="flex: 1 1 280px; min-width: 240px; max-width: 480px; text-align: center;">
+          <div style="font-family:'Orbitron',sans-serif; font-size: clamp(5rem, 16vw, 8.5rem); font-weight: 900; line-height: 1;
+                      background: var(--grad-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+                      filter: drop-shadow(0 0 40px rgba(0,197,255,0.25));">
+            404
+          </div>
+          <p style="font-size: 1.15rem; font-weight: 700; color: var(--color-text); margin: 16px 0 8px;">
+            ページが見つかりませんでした
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 36px;">
+            お探しのページは移動・削除された可能性があります。
+          </p>
+          <a href="index.html" class="btn btn-primary">トップページへ戻る</a>
+        </div>
+
+        <!-- キャラクター画像 -->
+        <div style="flex: 0 1 auto; display: flex; align-items: flex-end; justify-content: center;">
+          <img src="images/404_001.png" alt=""
+               style="height: clamp(280px, 45vh, 520px); width: auto; object-fit: contain;
+                      filter: drop-shadow(0 8px 32px rgba(0,197,255,0.18)) drop-shadow(0 2px 8px rgba(0,0,0,0.35));
+                      animation: hero-fade-up 0.7s ease both 0.2s;">
+        </div>
+
       </div>
-      <p style="font-size: 1.15rem; font-weight: 700; color: var(--color-text); margin: 16px 0 8px;">
-        ページが見つかりませんでした
-      </p>
-      <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 36px;">
-        お探しのページは移動・削除された可能性があります。
-      </p>
-      <a href="index.html" class="btn btn-primary">トップページへ戻る</a>
     </div>
   </section>
 
