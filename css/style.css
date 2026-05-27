@@ -1016,6 +1016,51 @@ footer .footer-logo {
 
 .social-channel-link:hover { opacity: 0.7; }
 
+/* Booth アイコン専用カラー */
+.footer-sns-icon[aria-label="Booth"] {
+  background: rgba(247, 82, 42, 0.1);
+  border-color: rgba(247, 82, 42, 0.35);
+  color: #f7522a;
+}
+.footer-sns-icon[aria-label="Booth"]:hover {
+  background: rgba(247, 82, 42, 0.22);
+  border-color: #f7522a;
+}
+.hero-sns-link[aria-label="Booth"] svg { color: #f7522a; }
+
+/* Social カード内フォローボタン */
+.social-follow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  margin-bottom: 12px;
+}
+.social-follow-btn:hover { opacity: 0.85; transform: translateY(-2px); }
+.social-follow-btn--x {
+  background: #000;
+  color: #fff;
+}
+.social-follow-btn--youtube {
+  background: #ff0000;
+  color: #fff;
+}
+
+.social-post-link {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  margin-top: 4px;
+  transition: color 0.2s;
+}
+.social-post-link:hover { color: var(--color-main); }
+
 @media (max-width: 768px) {
   .social-grid { grid-template-columns: 1fr; }
 }
