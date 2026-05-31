@@ -1,6 +1,8 @@
 User-agent: *
 Disallow:
 
+Sitemap: https://polycube-3dcg.github.io/polycube-hp/sitemap.xml
+
 # AI学習クローラー拒否
 User-agent: GPTBot
 Disallow: /
