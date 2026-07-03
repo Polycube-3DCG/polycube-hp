@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, noai, noimageai">
+  <meta name="description" content="ワンダープロトコル体験版 ダウンロードカード購入者向けページ">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ポリキュー部">
+  <meta property="og:title" content="ダウンロードカード | ポリキュー部">
+  <meta property="og:description" content="ワンダープロトコル体験版 ダウンロードカード購入者向けページ">
+  <meta property="og:image" content="https://polycube-3dcg.github.io/polycube-hp/images/logo_initialize_.webp">
+  <meta property="og:url" content="https://polycube-3dcg.github.io/polycube-hp/download.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Polycube_3DCG">
+  <title>ダウンロードカード | ポリキュー部</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card:hover { transform: none; box-shadow: var(--shadow-card); }
+  </style>
+</head>
+<body>
+
+  <div class="wireframe-bg" id="wireframe-bg"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.webp" alt="ポリキュー部" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="members.html">部員紹介</a></li>
+        <li><a href="achievements.html">活動実績</a></li>
+        <li><a href="commission.html">制作依頼</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="section-title">Download</h1>
+      <span class="page-header-rule"></span>
+      <p class="section-subtitle">ダウンロードカード</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container" style="max-width: 720px;">
+
+      <!-- 商品紹介 -->
+      <div class="card" style="overflow: hidden; margin-bottom: 40px;">
+        <!-- ▼ 商品画像：images/ に追加後、src を更新してください -->
+        <img src="images/wonder_protocol_cover.webp" alt="ワンダープロトコル体験版"
+             style="width: 100%; display: block; border-radius: var(--radius) var(--radius) 0 0;"
+             onerror="this.style.display='none'">
+        <div style="padding: 28px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <h2 style="font-size: 1.3rem; font-weight: 700; margin: 0;">ワンダープロトコル</h2>
+            <span class="tag tag-main" style="font-size: 0.8rem;">体験版</span>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.8;">
+            ポリキュー部が制作するゲーム「ワンダープロトコル」の体験版です。<br>
+            コミックマーケット108にてダウンロードカードをご購入いただいた方は、以下の手順でダウンロードしてください。
+          </p>
+        </div>
+      </div>
+
+      <!-- ダウンロード手順 -->
+      <div class="card" style="margin-bottom: 40px; padding: 28px;">
+        <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 24px;">ダウンロード手順</h3>
+        <ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
+          <li style="display: flex; gap: 16px; align-items: flex-start;">
+            <span style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: rgba(0, 197, 255, 0.15); color: var(--color-main); font-weight: 800; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;">1</span>
+            <div>
+              <div style="font-weight: 600; margin-bottom: 4px;">シリアルコードを確認する</div>
+              <div style="font-size: 0.9rem; color: var(--color-text-muted);">ご購入のダウンロードカードに記載されているシリアルコードをご確認ください。</div>
+            </div>
+          </li>
+          <li style="display: flex; gap: 16px; align-items: flex-start;">
+            <span style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: rgba(0, 197, 255, 0.15); color: var(--color-main); font-weight: 800; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;">2</span>
+            <div>
+              <div style="font-weight: 600; margin-bottom: 4px;">Concaのページを開く</div>
+              <div style="font-size: 0.9rem; color: var(--color-text-muted);">下のボタンからシリアルコード入力ページへアクセスします。</div>
+            </div>
+          </li>
+          <li style="display: flex; gap: 16px; align-items: flex-start;">
+            <span style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: rgba(0, 197, 255, 0.15); color: var(--color-main); font-weight: 800; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;">3</span>
+            <div>
+              <div style="font-weight: 600; margin-bottom: 4px;">コードを入力してダウンロード</div>
+              <div style="font-size: 0.9rem; color: var(--color-text-muted);">Concaの画面でシリアルコードを入力し、ダウンロードを開始してください。</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- ダウンロードボタン -->
+      <div style="text-align: center; margin-bottom: 48px;">
+        <!-- ▼ href の "#" を Conca のシリアルコード入力ページURL に変更してください -->
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 48px;">
+          Concaでシリアルコードを入力する
+        </a>
+        <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-top: 14px;">
+          ※ 外部サービス「Conca」のページへ移動します
+        </p>
+      </div>
+
+      <!-- お問い合わせ -->
+      <div class="card" style="padding: 24px; text-align: center; background: transparent; border: 1px solid var(--color-border);">
+        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 12px;">
+          ご不明な点はXのDMよりお気軽にお問い合わせください。
+        </p>
+        <a href="https://x.com/Polycube_3DCG" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.9rem;">
+          X (Twitter) でお問い合わせ
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="images/logo.webp" alt="ポリキュー部" class="footer-logo-img">
+      <ul class="footer-nav">
+        <li><a href="members.html">部員紹介</a></li>
+        <li><a href="achievements.html">活動実績</a></li>
+        <li><a href="commission.html">制作依頼</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <div class="footer-sns-row">
+        <a href="https://www.youtube.com/@%E3%83%9D%E3%83%AA%E3%82%AD%E3%83%A5%E3%83%BC%E9%83%A8" target="_blank" rel="noopener" class="footer-sns-icon" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#ff0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.75 15.5V8.5l6.25 3.5-6.25 3.5z"/></svg>
+        </a>
+        <a href="https://x.com/Polycube_3DCG" target="_blank" rel="noopener" class="footer-sns-icon" aria-label="X (Twitter)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://polycube.booth.pm/" target="_blank" rel="noopener" class="footer-sns-icon" aria-label="Booth">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 ポリキュー部. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/cubes.js"></script>
+</body>
+</html>
