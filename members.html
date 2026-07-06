@@ -182,6 +182,10 @@
 
   <script>
     function openPortfolio(src) {
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        window.open(src, '_blank');
+        return;
+      }
       const modal = document.getElementById('portfolio-modal');
       document.getElementById('portfolio-frame').src = src + '#toolbar=0&navpanes=0';
       modal.style.display = 'flex';
