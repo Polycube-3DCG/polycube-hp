@@ -51,13 +51,16 @@
       <h2 class="subsection-title" style="margin-bottom:32px;">部員</h2>
       <div class="members-grid">
 
-        <div class="card member-card">
+        <div class="card member-card member-card--portfolio" onclick="openPortfolio('images/Gontara_Portfolio_260706.pdf')" style="cursor:pointer;">
           <img src="images/introduce_ゴンタラ.webp" alt="ゴンタラ" class="member-avatar">
           <div class="member-name">ゴンタラ</div>
           <div class="member-role">代表 / 3DCGモデラー</div>
           <p class="member-bio">ポリキュー部の代表です！3DモデラーとしてゲームやVTuberの3Dモデル制作ができます！</p>
+          <div style="margin-top:12px; font-size:0.82rem; color:var(--color-main); text-align:center;">
+            ポートフォリオを見る →
+          </div>
           <div class="member-sns">
-            <a href="https://x.com/Gontara_3DCG" target="_blank" rel="noopener">X (Twitter)</a>
+            <a href="https://x.com/Gontara_3DCG" target="_blank" rel="noopener" onclick="event.stopPropagation()">X (Twitter)</a>
           </div>
         </div>
 
@@ -165,5 +168,37 @@
   </footer>
 
   <script src="js/cubes.js"></script>
+
+  <!-- PDFポートフォリオモーダル -->
+  <div id="portfolio-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:2000; align-items:center; justify-content:center; padding:16px;">
+    <div style="position:relative; width:100%; max-width:860px; height:90vh; background:#1a1a2e; border-radius:12px; overflow:hidden; display:flex; flex-direction:column;">
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid rgba(255,255,255,0.1); flex-shrink:0;">
+        <span style="font-size:0.9rem; font-weight:600;">ポートフォリオ</span>
+        <button onclick="closePortfolio()" style="background:none; border:none; color:inherit; font-size:1.4rem; cursor:pointer; line-height:1; padding:4px 8px;">✕</button>
+      </div>
+      <iframe id="portfolio-frame" src="" style="flex:1; border:none; width:100%;"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function openPortfolio(src) {
+      const modal = document.getElementById('portfolio-modal');
+      document.getElementById('portfolio-frame').src = src + '#toolbar=0&navpanes=0';
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closePortfolio() {
+      const modal = document.getElementById('portfolio-modal');
+      modal.style.display = 'none';
+      document.getElementById('portfolio-frame').src = '';
+      document.body.style.overflow = '';
+    }
+    document.getElementById('portfolio-modal').addEventListener('click', function(e) {
+      if (e.target === this) closePortfolio();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closePortfolio();
+    });
+  </script>
 </body>
 </html>
