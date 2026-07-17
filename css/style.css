@@ -863,13 +863,27 @@ footer .footer-logo {
   border-bottom: 1px solid rgba(255, 107, 174, 0.3);
   padding: 14px 0;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--color-pink);
 }
 
+.commission-status-bar--open {
+  background: rgba(0, 197, 255, 0.1);
+  border-top: 1px solid rgba(0, 197, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 197, 255, 0.3);
+  color: var(--color-main);
+}
+
 .commission-status-icon {
   margin-right: 8px;
+}
+
+.commission-status-sub {
+  font-size: 0.82rem;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-left: 12px;
 }
 
 /* ── コミッション ── */
