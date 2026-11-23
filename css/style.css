@@ -540,7 +540,7 @@ a.card:hover,
 
 .member-avatar {
   width: 88px;
-  height: 104px;
+  height: 88px;
   object-fit: cover;
   border: var(--line);
   background: var(--color-main-pale);
@@ -550,7 +550,7 @@ a.card:hover,
 
 .member-avatar-placeholder {
   width: 88px;
-  height: 104px;
+  height: 88px;
   border: var(--line);
   background: var(--color-main-pale);
   margin-bottom: 14px;
