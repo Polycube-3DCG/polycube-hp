@@ -37,7 +37,8 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+/* ページが短くてスクロールバーが出ない時も、横位置がずれないよう幅を確保 */
+html { scroll-behavior: smooth; scrollbar-gutter: stable; }
 
 body {
   font-family: var(--font-body);
