@@ -509,7 +509,8 @@ a.card:hover,
   display: grid;
   grid-template-columns: 88px 1fr;
   column-gap: 16px;
-  align-content: start;
+  /* 自己紹介の行を伸ばして、リンクを常にカードの下端にそろえる */
+  grid-template-rows: auto auto auto 1fr;
   padding: 0 20px 20px;
   overflow: hidden;
 }
@@ -582,7 +583,7 @@ a.card:hover,
 }
 
 .member-card .member-sns {
-  margin-top: auto;
+  align-self: end;
   padding-top: 14px;
 }
 
