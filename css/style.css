@@ -280,7 +280,6 @@ a.card:hover,
   color: var(--color-main-dark);
   font-weight: 800;
   letter-spacing: 0.2em;
-  margin-right: 12px;
 }
 
 .hero-logo {
@@ -349,19 +348,6 @@ a.card:hover,
 
 .hero-bg-slide.active { opacity: 1; }
 
-.viewport-label {
-  position: absolute;
-  z-index: 2;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: #fff;
-  background: rgba(17, 17, 17, 0.75);
-  padding: 2px 8px;
-}
-
-.viewport-label--tl { top: 12px; left: 12px; }
-.viewport-label--br { bottom: 12px; right: 12px; }
-
 /* マスキングテープ */
 .tape {
   position: absolute;
@@ -387,12 +373,10 @@ a.card:hover,
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 18px;
-  counter-reset: render;
 }
 
 .gallery-item {
   position: relative;
-  counter-increment: render;
   border: var(--line);
   border-radius: var(--radius);
   background: var(--color-card);
@@ -412,18 +396,6 @@ a.card:hover,
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.gallery-item::after {
-  content: 'render_' counter(render, decimal-leading-zero);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: #fff;
-  background: rgba(17, 17, 17, 0.75);
-  padding: 1px 8px;
 }
 
 .gallery-item .stamp {
@@ -473,7 +445,7 @@ a.card:hover,
 
 .news-title { font-size: 0.95rem; font-weight: 500; }
 
-/* 次の大会（未定表示） */
+/* 次のイベント（未定表示） */
 .event-tbd {
   display: inline-block;
   min-width: min(100%, 420px);
@@ -779,15 +751,6 @@ footer {
 
 .footer-copy { font-size: 0.8rem; color: var(--color-text-muted); }
 
-.footer-copy::after {
-  content: 'end of scene.';
-  display: block;
-  margin-top: 4px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--color-main-dark);
-}
-
 /* ── ページヘッダー（index以外） ── */
 .page-header {
   padding: 104px 0 8px;
@@ -948,7 +911,27 @@ footer {
   pointer-events: none;
 }
 
-.twitter-wrap { overflow: hidden; margin-bottom: 12px; }
+.twitter-intro {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  text-align: center;
+  margin: 8px 0 20px;
+}
+
+/* タイムラインは読み込めたときだけ表示 */
+.twitter-wrap {
+  height: 0;
+  overflow: hidden;
+}
+
+.twitter-wrap.is-loaded {
+  height: auto;
+  margin-bottom: 16px;
+  border: var(--line);
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
 
 .social-channel-link {
   display: inline-block;

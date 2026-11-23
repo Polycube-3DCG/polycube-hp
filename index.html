@@ -40,7 +40,7 @@
   <section class="hero">
     <div class="container hero-grid">
     <div class="hero-text">
-      <p class="hero-file"><span class="hero-file-tag">3DCG CIRCLE</span>部員 9名 在籍中</p>
+      <p class="hero-file"><span class="hero-file-tag">3DCG CIRCLE</span></p>
       <img src="images/logo.webp" alt="ポリキュー部" class="hero-logo">
       <p class="hero-sub">クリエイターのための<br>部活動</p>
       <div class="hero-buttons">
@@ -65,8 +65,6 @@
     <div class="hero-visual">
       <div class="hero-bg-slideshow"></div>
       <span class="tape" aria-hidden="true"></span>
-      <span class="viewport-label viewport-label--tl" aria-hidden="true">User Perspective</span>
-      <span class="viewport-label viewport-label--br" aria-hidden="true">Scene ｜ Polycube</span>
     </div>
     </div>
   </section>
@@ -116,7 +114,7 @@
   <!-- 次回イベント -->
   <section>
     <div class="container">
-      <h2 class="section-title">次の大会</h2>
+      <h2 class="section-title">次のイベント</h2>
       <p class="section-subtitle">Next Event</p>
       <!-- 次回イベント決定時はこちらに切り替え
       <a href="https://webcatalog.circle.ms/circle/23006717" target="_blank" rel="noopener"
@@ -189,15 +187,9 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             X (Twitter)
           </div>
-          <div style="padding: 20px 0 24px; text-align:center;">
-            <div style="width:64px; height:64px; background:#000; border-radius:50%; display:flex; align-items:center; justify-content:center; margin: 0 auto 16px;">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </div>
-            <div style="font-weight:700; font-size:1rem; margin-bottom:4px;"><span translate="no">ポリキュー部</span></div>
-            <div style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:20px;">@Polycube_3DCG</div>
-            <p style="font-size:0.88rem; color:var(--color-text-muted); line-height:1.7; margin-bottom:0;">
-              制作の進捗・イベント情報など<br>随時ポストしています！
-            </p>
+          <p class="twitter-intro">@Polycube_3DCG で制作の進捗・イベント情報などを<br>随時ポストしています！</p>
+          <div class="twitter-wrap" aria-hidden="true">
+            <a class="twitter-timeline" data-lang="ja" data-height="420" data-chrome="noheader nofooter" href="https://twitter.com/Polycube_3DCG?ref_src=twsrc%5Etfw"></a>
           </div>
           <a href="https://x.com/Polycube_3DCG" target="_blank" rel="noopener" class="social-follow-btn social-follow-btn--x" style="align-self: center;">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -239,6 +231,25 @@
     <img id="lightbox-img" src="" alt="">
   </div>
 
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script>
+    // X のタイムラインは読み込めたときだけ表示する（未ログインの閲覧者には空になるため）
+    (function () {
+      var wrap = document.querySelector('.twitter-wrap');
+      if (!wrap) return;
+      var tries = 0;
+      var timer = setInterval(function () {
+        var frame = wrap.querySelector('iframe');
+        if (frame && frame.offsetHeight > 80 && getComputedStyle(frame).visibility !== 'hidden') {
+          wrap.classList.add('is-loaded');
+          wrap.removeAttribute('aria-hidden');
+          clearInterval(timer);
+        } else if (++tries > 30) {
+          clearInterval(timer);
+        }
+      }, 1000);
+    })();
+  </script>
   <script src="js/main.js"></script>
 
   <script>
