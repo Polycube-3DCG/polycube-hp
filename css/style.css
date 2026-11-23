@@ -254,12 +254,15 @@ a.card:hover,
   max-width: none;
   padding: 0;
   display: grid;
-  grid-template-columns: minmax(340px, 1fr) 1.6fr;
+  /* 左の文字欄は「下のセクションの左端 ＋ 文字の幅」ぶん確保する */
+  grid-template-columns: max(380px, calc((100vw - 1100px) / 2 + 500px)) 1fr;
   min-height: min(620px, calc(100vh - 64px));
 }
 
 .hero-text {
   padding: 48px clamp(24px, 4vw, 56px);
+  /* 広い画面では、ナビや下のセクションと左端をそろえる */
+  padding-left: max(clamp(24px, 4vw, 56px), calc((100vw - 1100px) / 2 + 24px));
   display: flex;
   flex-direction: column;
   justify-content: center;
