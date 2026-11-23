@@ -946,27 +946,7 @@ footer {
   pointer-events: none;
 }
 
-.twitter-intro {
-  font-size: 0.88rem;
-  color: var(--color-text-muted);
-  line-height: 1.7;
-  text-align: center;
-  margin: 8px 0 20px;
-}
-
-/* タイムラインは読み込めたときだけ表示 */
-.twitter-wrap {
-  height: 0;
-  overflow: hidden;
-}
-
-.twitter-wrap.is-loaded {
-  height: auto;
-  margin-bottom: 16px;
-  border: var(--line);
-  border-radius: var(--radius-sm);
-  background: #fff;
-}
+.twitter-wrap { overflow: hidden; margin-bottom: 12px; }
 
 .social-channel-link {
   display: inline-block;
