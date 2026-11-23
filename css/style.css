@@ -256,7 +256,7 @@ a.card:hover,
   display: grid;
   /* 左の文字欄は「下のセクションの左端 ＋ 文字の幅」ぶん確保する */
   grid-template-columns: max(380px, calc((100vw - 1100px) / 2 + 500px)) 1fr;
-  min-height: min(620px, calc(100vh - 64px));
+  min-height: min(560px, calc(100vh - 64px));
 }
 
 .hero-text {
@@ -344,7 +344,7 @@ a.card:hover,
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: 70% 30%;
+  background-position: 80% 45%;
   opacity: 0;
   transition: opacity 1.2s ease;
 }
@@ -1123,6 +1123,7 @@ footer {
     aspect-ratio: 4 / 3;
   }
   .hero-text { padding: 32px 24px 40px; }
+  .hero-bg-slide { background-position: 70% 30%; }
   .hero-logo { max-width: 300px; }
 }
 
