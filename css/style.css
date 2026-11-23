@@ -456,6 +456,13 @@ a.card:hover,
   white-space: nowrap;
 }
 
+/* タグの幅をそろえて、タイトルの開始位置を統一 */
+.news-item .tag {
+  flex-shrink: 0;
+  width: 6em;
+  text-align: center;
+}
+
 .news-title { font-size: 0.95rem; font-weight: 500; }
 
 /* 次の大会（未定表示） */
